@@ -1,5 +1,5 @@
 function solution(sides) {
     let max = Math.max(...sides);
-    let sum = sides.reduce((acc, cur) => acc + cur, 0);
-    return (sum - max) > max ? 1 : 2;
+    let sum = sides.reduce((acc, cur) => acc + cur, 0) - max;
+    return sum > max ? 1 : 2;
 }

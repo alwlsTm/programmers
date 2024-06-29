@@ -1,5 +1,4 @@
 function solution(s) {
-    return s.length % 2 !== 0 
-        ? s[Math.trunc(s.length / 2)] 
-        : s[s.length / 2 - 1] + s[s.length / 2];
+    let mid = Math.trunc(s.length / 2);
+    return s.length % 2 !== 0 ? s[mid] : s[mid - 1] + s[mid];
 }
